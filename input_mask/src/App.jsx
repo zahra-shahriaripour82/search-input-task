@@ -16,11 +16,10 @@ const [cityName,setCityName]=useState(cities);
 const handleChange=(e)=>{
    const value=e.target.value;
    setSlectCity(value);
-//  findCity()
 
 
 
-// const citySugges= cities.filter(( city)=> city.toLowerCase().includes(selectCity));
+
 const citySugges=cities.find(city => city.startsWith(selectCity));
   console.log(citySugges);
   if(citySugges){
@@ -33,13 +32,7 @@ const citySugges=cities.find(city => city.startsWith(selectCity));
   
 }
 
-//  const findCity=()=>{
-//   const citySugges= cities.filter(( city)=> city.toLowerCase().includes(selectCity))
-  
-//    setCityName(citySugges)
-   
-// }
-//  findCity()
+
 console.log(selectCity);
 console.log(cityName);
 
