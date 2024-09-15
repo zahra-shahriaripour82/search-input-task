@@ -4,10 +4,9 @@ import Input from "./components/Input";
 import  cities from"./cities.json";
 import { useState } from "react";
 function App(){
-
-   //مقداری که کاربر وارد میکنه اینجا میاد 
+ 
 const[selectCity,setSlectCity]=useState("");
-//مقدار شهرها رو اینجا دارم
+
 const [cityName,setCityName]=useState(cities);
 
 
